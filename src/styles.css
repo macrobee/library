@@ -1,0 +1,116 @@
+:root{
+    --light: #E5F4E3;
+    --grey: #dce3db;
+    --highlight: #5DA9E9;
+    --emphasis: #003F91;
+    --white: #FFFFFF;
+    --dark: #6D326D;
+    --active: rgb(62, 236, 62);
+    --inactive: rgb(228, 68, 68);
+}
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    background-color: var(--emphasis);
+    color: var(--white);
+    height: 10vh;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+h1{
+    margin: 0;
+    color: var(--light);
+    font-weight: 900;
+}
+.student-list{
+    background-color: var(--light);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    height: 90vh;
+    padding: 50px;
+}
+.card-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.student-card, .add-student{
+    background-color:var(--white);
+    height: 200px;
+    padding: 20px;
+    border-radius: 15px;
+    transition: 0.3s;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid var(--emphasis);
+}
+.student-card:hover{
+    scale: 1.05;
+}
+.active{
+    border-top: 15px solid var(--active);
+}
+.inactive{
+    border-top: 15px solid var(--inactive);
+}
+h2{
+    margin: 0;
+    font-weight: 700;
+    /* background-color: var(--highlight); */
+}
+p{
+    font-weight: 300;
+    margin: 0 auto;
+    
+}
+.student-info{
+    display: flex;
+    gap: 5%;
+}
+.session-info{
+    display: flex;
+    gap: 5%;
+}
+button{
+    width: 50%;
+    border-radius: 4px;
+    background-color: var(--highlight);
+    border: none;
+    padding: 3px;
+    transition: 0.3s;
+    margin-top: auto;
+}
+button:hover{
+    color: var(--light);
+    background-color: var(--emphasis);
+}
+.add-student{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.card-info{
+    display: flex;
+    justify-items: space-between;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 5px; 
+}
+.add-student:hover{
+    background-color: var(--grey);
+    /* scale: 1.05; */
+}
